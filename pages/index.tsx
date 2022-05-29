@@ -73,7 +73,8 @@ const Home: NextPage = () => {
                 <div style={{ marginBottom: "30px" }}>
                   <Input 
                     placeholder="Enter Player's Name"                    
-                    type="text"                                
+                    type="text"
+                    inputProps={{ maxLength: 18 }}                                
                     onChange={e=> setPlayerOne(e.target.value)}                   
                   />               
                 </div>
@@ -127,7 +128,8 @@ const Home: NextPage = () => {
                 <div style={{ marginBottom: "30px" }}>
                 <Input 
                     placeholder="Enter Player's Name"                    
-                    type="text"                                
+                    type="text" 
+                    inputProps={{ maxLength: 18 }}                               
                     onChange={e=> setPlayerTwo(e.target.value)}                   
                   />                
                 </div>
